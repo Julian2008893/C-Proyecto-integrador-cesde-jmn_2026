@@ -21,4 +21,7 @@ public interface StudentRepository {
 
     int count();
 
+    boolean existByDocumentNumber(String documentNumber);
+
+    Student findByDocumentNumber(String documentNumber);
 }
