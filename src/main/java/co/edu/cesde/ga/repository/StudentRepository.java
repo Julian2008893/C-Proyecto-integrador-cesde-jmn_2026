@@ -6,17 +6,22 @@ import java.util.List;
 public interface StudentRepository {
 
     Student create (Student student);
+
     List <Student> findAll();
 
-    Student findById(Long studentId);
+    Student findById (Long studentId);
 
-    Student findByDocumentNumber(String documentNumber);
+    Student findByDocument (String documentNumber);
 
-    boolean update(Student updateStudent);
+    boolean update (Student updateStudent);
 
-    boolean delete(Long StudentId);
+    boolean delete (Long studentId);
 
-    boolean existByDocument (String documentNumber);
+    boolean existsByDocument (String documentNumber);
 
     int count();
+
+    boolean existByDocumentNumber(String documentNumber);
+
+    Student findByDocumentNumber(String documentNumber);
 }

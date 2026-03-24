@@ -25,7 +25,7 @@ public class Student extends Person {
 
     }
 
-    public long getStudentId() {
+    public boolean getStudentId() {
         return studentId;
     }
 
