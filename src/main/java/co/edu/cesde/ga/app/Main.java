@@ -3,6 +3,8 @@ package co.edu.cesde.ga.app;
 import co.edu.cesde.ga.model.Person;
 import co.edu.cesde.ga.model.Teacher;
 import co.edu.cesde.ga.model.Student;
+import co.edu.cesde.ga.model.Enrollments;
+import co.edu.cesde.ga.model.Programs;
 
 public class Main {
 
@@ -57,6 +59,12 @@ public class Main {
         System.out.println("Last name: " + student.getLastName());
         System.out.println("Status: " + student.getStatus());
         System.out.println("Birth date: " + student.getBirthDate());
+
+        Enrollments enrollments = new Enrollments();
+
+        enrollments.setStudentId("Studen ID:" + enrollments.getStudentId());
+
+
     }
 
 }
