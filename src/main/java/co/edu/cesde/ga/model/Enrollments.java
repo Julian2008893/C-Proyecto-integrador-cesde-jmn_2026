@@ -2,21 +2,31 @@ package co.edu.cesde.ga.model;
 
 public class Enrollments {
 
+    private Long enrollmentId;
     private String studentId;
     private String groupId;
     private String periodId;
     private String status;
     private String enrolledAt;
 
-    public Enrollments() {
+    public Enrollments(String studentId, String groupId, String periodId, String status, String enrolledAt) {
     }
 
-    public Enrollments(String studentId, String groupId, String periodId, String status, String enrolledAt) {
+    public Enrollments(Long enrollmentId, String studentId, String groupId, String periodId, String status, String enrolledAt) {
+        this.enrollmentId = enrollmentId;
         this.studentId = studentId;
         this.groupId = groupId;
         this.periodId = periodId;
         this.status = status;
         this.enrolledAt = enrolledAt;
+    }
+
+    public Long getEnrollmentId() {
+        return enrollmentId;
+    }
+
+    public void setEnrollmentId(Long enrollmentId) {
+        this.enrollmentId = enrollmentId;
     }
 
     public String getStudentId() {
@@ -57,5 +67,17 @@ public class Enrollments {
 
     public void setEnrolledAt(String enrolledAt) {
         this.enrolledAt = enrolledAt;
+    }
+
+    @Override
+    public String toString() {
+        return "Enrollment{" +
+                "enrollmentId= " + getEnrollmentId() + '\n' +
+                "studentId= " + getStudentId() + '\n' +
+                "groupId= " + getGroupId() + '\n' +
+                "periodId= " + getPeriodId() + '\n' +
+                "status= " + getStatus() + '\n' +
+                "enrolledAt= " + getEnrolledAt() + '\n' +
+                " }";
     }
 }
