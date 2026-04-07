@@ -1,4 +1,4 @@
-package co.edu.cesde.ga.app;
+package co.edu.cesde.ga.application;
 
 import co.edu.cesde.ga.model.Student;
 import co.edu.cesde.ga.repository.StudentRepository;

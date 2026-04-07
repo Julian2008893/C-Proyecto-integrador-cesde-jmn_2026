@@ -5,7 +5,7 @@ public class Student extends Person {
     private String birthDate;
     private Long studentId;
 
-    public Student(Long userId, String documentType, String documentNumber, String firstName, String lastName, String status, String birthDate) {
+    public Student(Long studentId, String documentType, String documentNumber, String firstName, String lastName, String status, String birthDate) {
     }
 
     public Student(Long studentId, String birthDate, Long userId, String code,String documentType, String documentNumber, String firstName, String lastName, String status) {
